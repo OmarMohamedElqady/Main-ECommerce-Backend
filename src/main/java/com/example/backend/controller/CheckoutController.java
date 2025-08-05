@@ -7,6 +7,7 @@ import com.example.backend.service.CheckoutService;
 import com.stripe.exception.StripeException;
 import com.stripe.model.PaymentIntent;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -14,8 +15,8 @@ import org.springframework.web.bind.annotation.*;
 import java.util.logging.Logger;
 
 @RestController
-//@CrossOrigin("http://localhost:4200")
-@CrossOrigin("https://ecommerce-app-a01c3.web.app")
+@CrossOrigin("http://localhost:4200")
+//@CrossOrigin("https://ecommerce-app-a01c3.web.app")
 @RequestMapping("/api/checkout")
 public class CheckoutController {
 
